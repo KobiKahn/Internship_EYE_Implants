@@ -46,9 +46,9 @@ Med_time = data_df['Time_M']
 Med_force = data_df['Force_M']
 Med_stroke = data_df['Stroke_M']
 
-# graph_scatter(Bio_stroke, Bio_force, 'BIOCERAMIC STROKE VS FORCE')
-# graph_scatter(Cor_stroke, Cor_force, 'CORRALINE STROKE VS FORCE')
-# graph_scatter(Med_stroke, Med_force, 'MEDPOR STROKE VS FORCE')
+graph_scatter(Bio_stroke, Bio_force, 'BIOCERAMIC STROKE VS FORCE')
+graph_scatter(Cor_stroke, Cor_force, 'CORRALINE STROKE VS FORCE')
+graph_scatter(Med_stroke, Med_force, 'MEDPOR STROKE VS FORCE')
 
 set1 = [Bio_stroke, Bio_force, 'BIOCERAMIC STROKE VS FORCE']
 set2 = [Cor_stroke, Cor_force, 'CORRALINE STROKE VS FORCE']
