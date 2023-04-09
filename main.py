@@ -15,15 +15,16 @@ def graph_scatter(xdata, ydata, name):
 
 
 def graph_all(set1, set2, set3):
-    fig, ax = plt.subplots(nrows=1, ncols=3)
-    ax[0].plot(set1[0], set1[1])
-    ax[0].title.set_text(set1[2])
-
-    ax[1].plot(set2[0], set2[1])
-    ax[1].title.set_text(set2[2])
-
-    ax[2].plot(set3[0], set3[1])
-    ax[2].title.set_text(set3[2])
+    # fig, ax = plt.subplots(nrows=1, ncols=)
+    plt.plot(set1[0], set1[1])
+    # ax[0].title.set_text(set1[2])
+    plt.plot(set2[0], set2[1])
+    # ax[1].title.set_text(set2[2])
+    plt.plot(set3[0], set3[1])
+    plt.title('Stroke (mm) Vs. Force (N)')
+    plt.xlabel('Stroke (mm)')
+    plt.ylabel('Force (N)')
+    plt.legend(['BioCeramic', 'Coralline', 'MedPor'])
     plt.show()
 
 
@@ -46,9 +47,9 @@ Med_time = data_df['Time_M']
 Med_force = data_df['Force_M']
 Med_stroke = data_df['Stroke_M']
 
-graph_scatter(Bio_stroke, Bio_force, 'BIOCERAMIC STROKE VS FORCE')
-graph_scatter(Cor_stroke, Cor_force, 'CORRALINE STROKE VS FORCE')
-graph_scatter(Med_stroke, Med_force, 'MEDPOR STROKE VS FORCE')
+# graph_scatter(Bio_stroke, Bio_force, 'BIOCERAMIC STROKE VS FORCE')
+# graph_scatter(Cor_stroke, Cor_force, 'CORRALINE STROKE VS FORCE')
+# graph_scatter(Med_stroke, Med_force, 'MEDPOR STROKE VS FORCE')
 
 set1 = [Bio_stroke, Bio_force, 'BIOCERAMIC STROKE VS FORCE']
 set2 = [Cor_stroke, Cor_force, 'CORRALINE STROKE VS FORCE']
